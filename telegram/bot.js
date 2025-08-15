@@ -3,7 +3,7 @@ import { Telegraf } from 'telegraf';
 import { connectDB } from '../db.js';
 import User from '../models/User.js';
 import Message from '../models/Message.js';
-import tempy from 'tempy';
+import * as tempy from 'tempy';
 import fs from 'fs';
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
